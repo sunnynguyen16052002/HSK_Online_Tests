@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(245, 219, 243); */
+}
+
+/* .grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100px;
+}
+
+.grid__row{
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    display: block;
+  
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+    display: block ;
+} */
+
+.column{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/* GIAO DIỆN 3 CỘT */
+.column-half{
+    width: 50%;
+}
+
+/* COMMON CSS */
+
+.header-references{
+    height: 120px;  
+    background-color: rgb(179, 9, 164);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.header-references-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-references-with-search{
+    display: flex;
+    margin: 0 8px;
+}
+
+.header-references__search{
+    flex: 1;
+    height: 38px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-references__search-input{
+    flex: 1; 
+    width: 740px;  
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.header-references__search-btn{
+    background-color: rgb(181, 8, 187);
+    border: none;
+    height: 34px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+
+
+
+/* BTN - Shopping */
+
+.container-references{
+    margin-top: 130px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    /* display: flex; */
+    /* z-index: -1; */
+}
+
+.container-references-icon{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.container-references  > a{
+    display: block;
+    padding-top: 16px;
+}
+
+.container-references a:hover{
+    opacity: 0.8;
+}
+
+.btn-references{
+    border: 1px solid #000;
+    min-width: 120px;
+    /* width: 100px; */
+    height: 50px;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+
+
+.btn-HSK1{
+    background-color: rgb(121, 124, 124);
+    border: rgb(121, 124, 124);
+}
+
+.btn-HSK2{
+    background-color: rgb(10, 187, 113);
+    border: rgb(10, 187, 113);
+}
+
+.btn-HSK3{
+    background-color: orange;
+    border: orange;
+}
+
+.btn-HSK4{
+    background-color: rgb(255, 8, 0);
+    border: rgb(255, 8, 0);
+}
+
+.btn-HSK5{
+    background-color: rgb(12, 16, 201);
+    border: rgb(12, 16, 201);
+}
+
+.btn-HSK6{
+    background-color: rgb(134, 2, 146);
+    border: rgb(134, 2, 146);
+}
+
+.btn-book{
+    background-color: rgb(221, 7, 53);
+    border: rgb(221, 7, 53);
+}
+
+.btn-book1{
+    background-color: rgb(221, 7, 53);
+    border: rgb(221, 7, 53);
+}

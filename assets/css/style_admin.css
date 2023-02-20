@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(245, 219, 243); */
+}
+
+.backgr-img-ad{
+    background: url('https://www.omeidachinese.com/wp-content/uploads/2020/09/hsk-books.jpg') top center / cover no-repeat;
+    width: 1254px;
+    height: 691px;
+    position: relative;
+    opacity: 0.8;
+}
+
+.backgr-img-content{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 15px;
+    z-index: 3;
+}
+
+.ad-btn-control > a {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.ad-btn-qlcart,
+.ad-btn-qlorder,
+.ad-btn-qlpayment,
+.ad-btn-add-mt,
+.ad-btn-add-radio,
+.ad-btn-add,
+.ad-btn-alter,
+.ad-btn-alter-MT,
+.ad-btn-alter-radio,
+.ad-btn-remove{
+    min-width: 120px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 14px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    border: 3px solid;
+    margin-left: 25px;
+}
+
+.ad-btn-add{
+    background-color: rgb(35, 211, 0);
+    border-color: rgb(0, 165, 27);
+    
+}
+
+.ad-btn-add:hover{
+    background-color: rgb(8, 150, 8);
+}
+
+.ad-btn-add-mt{
+    background-color: rgb(0, 150, 75);
+    border-color: rgb(0, 150, 75);
+}
+
+.ad-btn-add-mt:hover{
+    background-color: rgb(0, 121, 61);
+}
+
+.ad-btn-add-radio{
+    background-color: rgb(1, 128, 100);
+    border-color: rgb(1, 117, 59);
+}
+
+.ad-btn-add-radio:hover{
+    background-color: rgb(2, 105, 83);
+}
+/* ------------------- */
+.ad-btn-alter{
+    background-color: rgb(1, 48, 202);
+    border-color:  rgb(3, 35, 141);
+}
+
+.ad-btn-alter:hover{
+    background-color: rgb(0, 0, 185);
+}
+
+.ad-btn-alter-MT{
+    background-color: rgb(0, 169, 236);
+    border-color: rgb(0, 169, 236);
+}
+
+.ad-btn-alter-MT:hover{
+    background-color: rgb(1, 135, 189);
+}
+
+.ad-btn-alter-radio{
+    background-color: rgb(0, 231, 200);
+    border-color: rgb(0, 206, 178);
+}
+
+.ad-btn-alter-radio:hover{
+    background-color: rgb(0, 161, 161);
+}
+
+/* ------------------- */
+.ad-btn-remove{
+    background-color: rgb(255, 160, 215);
+    border-color: rgb(223, 76, 39);
+}
+
+.ad-btn-remove:hover{
+    background-color: rgb(199, 0, 0);
+}
+
+
+/* ------------------- */
+.ad-btn-qlcart{
+    background-color: rgb(150, 0, 170);
+    border-color: rgb(119, 0, 134);
+}
+
+.ad-btn-qlcart:hover{
+    background-color: rgb(98, 0, 122);
+}
+
+/* ------------------- */
+.ad-btn-qlorder{
+    background-color: rgb(214, 104, 2);
+    border-color: rgb(179, 88, 4);
+}
+
+.ad-btn-qlorder:hover{
+    background-color: rgb(192, 88, 3);
+}
+/* ------------------- */
+.ad-btn-qlpayment{
+    background-color: rgb(224, 2, 76);
+    border-color: rgb(160, 3, 55);
+}
+
+.ad-btn-qlpayment:hover{
+    background-color: rgb(161, 0, 54);
+}

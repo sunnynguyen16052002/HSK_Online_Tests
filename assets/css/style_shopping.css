@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(245, 219, 243); */
+}
+
+.grid-header{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap; 
+    /* margin-left: 33px; */
+    margin-right: -8px;
+}
+
+
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4{
+    padding-left: 15px;
+    padding-right: 5px;
+    width: 31%;
+    display: block;
+    margin-bottom: 16px;
+  
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 70.3334%;
+    display: block ;
+}
+
+/* END COMMON CSS */
+
+
+.header-shopping{
+    height: 135px;  
+    background-color: rgb(179, 9, 164);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+.header-shopping-with-search{
+    display: flex;
+    margin: 0 8px;
+}
+
+.header-shopping__search{
+    flex: 1;
+    height: 38px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-shopping__search-input{
+    flex: 1; 
+    width: 740px;  
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.header-shopping__search-btn{
+    background-color: rgb(181, 8, 187);
+    border: none;
+    height: 34px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.shopping-header-logo > a{
+    font-size: 35px;
+    margin-left: -80px;
+    padding-right: 30px;
+    color: #fff;
+}
+
+/* .header-shopping__search-input-wrap{
+    flex: 1;  
+    height: 100%;
+    position: relative;
+}  */
+
+
+/* ---------------CART-------------------- */
+
+
+.header-shopping__cart{
+    width: 150px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.header-shopping__cart:hover .header__cart-list{
+    display: block;
+}
+
+.header-shopping__card-wrap{
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+
+.header-shopping__cart-icon{
+    font-size: 2.4rem;
+    color: white;
+    margin-top: 4px;
+}
+
+.header-shopping__cart-list{
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 1px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+    cursor: default;
+}
+
+                                            /* APP CONTAINER */
+/* DANH MỤC  */
+.app-container{
+    margin-top: 135px;
+    background-color: #f7f7f7;
+    /* padding-top: 20px; */
+}
+
+.app__content{
+    padding-top: 30px;
+}
+
+.category{
+    border-radius: 2px;
+    background-color: #fff;
+    word-wrap: break-word;
+    /* position: fixed; */
+}
+
+
+.category__heading{
+    color: #555454;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading-icon{
+    font-size: 1.4rem;
+    margin-right: 4px;
+    /* position: relative; */
+    top: -1px;
+}
+
+.category-list{
+    padding:0 0 8px 0;
+    list-style: none;
+    margin-left: 9px;
+}
+
+
+
+.category-item--active .category-item__link{
+    color: #fff;
+
+}
+
+/* .category-item--active .category-item__link::before{
+    content: "";
+    top: 50%;
+    left: 4px;
+    position: absolute;
+    border: 6px solid;
+    transform: translateY(-50%);
+    border-color: transparent transparent transparent var(--primary-color);
+} */
+
+.category-item__link{
+    /* position: relative; */
+    font-size: 17px;
+    color: rgb(58, 56, 56);
+    text-decoration: none;
+    padding: 4px 16px;
+    display: block;
+    transition: right linear 0.1s; /*khi có chuyển động thì nó sẽ chuyển động như thế nào*/
+    
+}
+
+.category-item__link:hover{
+    right: -4px;
+    color: #8d077b;
+    /* font-weight: 600; */
+}
+
+/* SẢN PHẨM */
+.home-product {
+    margin-bottom: 10px;
+}
+
+.home-product-item{
+    background-color:#fff;
+    box-shadow: 0 0.1rem 2px rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    
+   
+}
+
+.home-product-item-a{
+    text-decoration: none;
+}
+
+.home-product-item:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-product-item__img{
+    /* width: 1000px; */
+    width: 230px;
+    height: 300px;
+    padding-top: 4px;
+    padding-left: 11px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+}
+
+.home-product-item__name{
+    font-size: 19px;
+    font-weight: 500;
+    color: #2b2a2a;
+    line-height: 1.4rem; 
+    height: 3.8rem;
+    margin: 10px 10px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding-bottom: 4px;
+    text-overflow: ellipsis;
+
+}
+
+.home-product-item__price{
+    display: flex;
+    margin-left: 10px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: #af0060;
+    font-size: 22px;
+}
+
+/* .home-product-item__price-old{
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.home-product-item__price-current{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-left: 5px;
+} */
+
+.home-product-item__action{
+    display: flex;
+    margin: 6px 10px 0;
+    justify-content: space-between;
+}
+
+.home-product-item__origin{
+    /* display: flex; */
+    margin: 0 10px;
+    color: #3d3c3c;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+.page-button-container{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.page-button{
+    background-color: rgb(253, 100, 171);
+    margin: 15px;
+    border-radius: 2px; 
+    border: 1px;
+}
+
+.page-button:hover {
+    background-color: #b305b9;
+    cursor: pointer;
+}
+
+.page-button-a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center; 
+    margin: 14px 14px;
+    color: rgb(252, 252, 252);
+}
+

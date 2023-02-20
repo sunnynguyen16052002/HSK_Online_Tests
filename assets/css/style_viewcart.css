@@ -1,0 +1,108 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.cart-top-wrap {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b0b0b0;
+    height: 100px;
+    width: 65%;
+
+}
+
+.buy-book-process {
+
+    display: flex;
+    height: 2px;
+    width: 65%;
+    background: #b0b0b0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+
+.buy-book-process--item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: rgb(255, 116, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.buy-book-content__right--header {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buy-book-content__right--item {
+    padding-top: 8px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.buy-book-content {
+    display: flex;
+    margin: 0 10px;
+
+}
+
+.buy-book-content__left {
+    width: 65%;
+}
+
+.buy-book-content__left table {
+    width: 100%;
+}
+
+.buy-book-content__left table th {
+    border-collapse: collapse;
+    border-bottom: 2px solid #c6c4c4;
+}
+
+.buy-book-content__left table td {
+    border-collapse: collapse;
+    border-bottom: 2px solid #c6c4c4;
+}
+
+.buy-book-content__right {
+    width: 30%;
+    margin: 0 20px;
+    padding: 6px 10px;
+    background: #ededed;
+}
+
+
+.return-product-page--btn,
+.buy-book-content__right--btn {
+
+    border: none;
+    outline: none;
+    background: #fc72a0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.return-product-page--btn {
+    width: 233px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.buy-book-content__right--btn {
+    width: 353px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.return-product-page--btn:hover,
+.buy-book-content__right--btn:hover {
+    background: #f51165;
+}

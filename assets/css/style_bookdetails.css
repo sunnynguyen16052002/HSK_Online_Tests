@@ -1,0 +1,261 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 243, 241);
+}
+
+.header-shopping-details {
+    height: 115px;
+    background-color: rgb(179, 9, 164);
+    top: 0;
+    width: 100%;
+}
+
+.nav-details>li {
+    display: inline-block;
+}
+
+.nav-details li {
+    position: relative;
+}
+
+.nav-details>li>a {
+    color: #fff;
+    font-weight: 540;
+
+}
+
+.nav-details>li>a {
+    text-transform: uppercase;
+}
+
+.nav-details li>a {
+    text-decoration: none;
+    display: block;
+    padding: 0 16px;
+    line-height: 64px;
+    position: relative;
+    font-size: 16px;
+}
+
+.nav-details>li:hover>a {
+    color: #000;
+    background-color: rgb(238, 196, 231);
+}
+
+.grid-row__detailts {
+    display: flex;
+}
+
+.grid-column2__detailts {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33%;
+}
+
+
+.grid-column10__detailts {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60%;
+    display: block;
+}
+
+
+.category-list__details {
+    margin-top: 6px;
+}
+
+.category-container {
+    margin-top: 8px;
+    display: flex;
+    list-style-type: none;
+}
+
+.category-list>a {
+    border-bottom: 1px solid #8d077b;
+    border-left: 1px solid #8d077b;
+    border-right: 1px solid #8d077b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    list-style: none;
+    margin-left: 9px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(29, 29, 29);
+    box-shadow: 0 3px 8px rgba(44, 44, 44, 0.3);
+    background-color: #f86ee6;
+}
+
+.category-list>a:hover {
+    right: -4px;
+    color: #030303;
+    background-color: rgb(250, 171, 243);
+}
+
+.details-category__heading {
+    color: #555454;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.details-category__heading-icon {
+    font-size: 19px;
+    margin-right: 4px;
+    /* position: relative; */
+    top: -1px;
+}
+
+.details-img {
+    width: 380px;
+    height: 450px;
+    margin-top: 14px;
+    margin-left: 10px;
+
+}
+
+.details-infor {
+    margin-top: 16px;
+    margin-left: 45px;
+}
+
+.details-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.details-infor-items {
+    margin-bottom: 16px;
+}
+
+.details-infor-tittle {
+    font-size: 22px;
+}
+
+.details-infor-price {
+    font-size: 24px;
+    color: orangered;
+}
+
+.details-infor-lable {
+    color: #555454;
+    font-size: 18px;
+    margin-bottom: 6px;
+
+}
+
+
+/* Sub hinh */
+
+.book-details-subimg {
+    display: flex;
+}
+
+.book-details-subimg__item {
+    width: 105px;
+    height: 113px;
+    border: 1px solid #333;
+    padding: 0 4px;
+    cursor: pointer;
+
+}
+
+.addcart-button {
+    text-decoration: none;
+
+}
+
+.btn-add,
+.btn {
+    min-width: 142px;
+    height: 45px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2.5px;
+    font-size: 1.2rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: #b6009e;
+    margin: 10px;
+
+}
+
+.btn-add :hover {
+    opacity: 0.7;
+}
+
+.btn :hover {
+    opacity: 0.7;
+}
+
+
+.btn-add {
+    width: 185px;
+    border: 1px solid;
+    border-radius: 2.5px;
+    padding: 0 12px rgb(155, 2, 91);
+    color: rgb(155, 2, 91);
+    display: inline-flex;
+    background-color: transparent;
+
+}
+
+.text {
+    padding: 0 6px;
+}
+
+.related-products {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #e1065d;
+}
+
+.related-book-price {
+    font-size: 18px;
+    color: #dd4381;
+}
+
+.img-header {
+    font-size: 18px;
+    color: #333;
+}
+
+.related-product-title {
+    margin-bottom: 15px;
+}
+
+.related-product-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+.related-product-item {
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.related-product-item img {
+    width: 100%;
+    height: 330px;
+
+}

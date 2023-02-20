@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(245, 219, 243); */
+}
+
+.column {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.column-half {
+    width: 50%;
+}
+
+.column-full {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+/* -------------END COMMON CSS---------------- */
+
+
+
+.header {
+    height: 64px;
+    background-color: rgb(179, 9, 164);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav>li>a {
+    color: #fff;
+    font-weight: 540;
+
+}
+
+.nav>li>a {
+    text-transform: uppercase;
+}
+
+.nav li>a {
+    text-decoration: none;
+    display: block;
+    padding: 0 16px;
+    line-height: 64px;
+    position: relative;
+    font-size: 16px;
+}
+
+.nav>li:hover>a {
+    color: #000;
+    background-color: rgb(238, 196, 231);
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-icon-link {
+    display: inline-block;
+}
+
+.singup_login li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 4px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 15px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.singup_login>li>a {
+    text-decoration: none;
+    line-height: 64px;
+    color: #fff;
+}
+
+.singup_login>li:hover {
+    opacity: 0.8;
+}
+
+
+/* Subnav - Listening */
+#nav .subnav-icon {
+    font-size: 20px;
+}
+
+
+.subnav-Listening {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(250, 250, 250);
+    min-width: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* font-weight: 600; */
+    display: none;
+    letter-spacing: 0.8;
+    transition: right linear 0.1s;
+    z-index: 1;
+}
+
+.nav li:hover .subnav-Listening {
+    display: block;
+}
+
+
+
+.subnav-Listening .subnav-Listening li a {
+    color: #000;
+}
+
+.subnav-Tests li:hover,
+.subnav-References li:hover,
+.subnav-Listening li:hover {
+    background-color: rgb(254, 233, 255);
+
+}
+
+
+.subnav-Tests li:hover a,
+.subnav-References li:hover a,
+.subnav-Listening li:hover a {
+    transition: right linear 0.1s;
+    right: -8px;
+}
+
+.subnav__HSK1 {
+    color: rgb(102, 100, 100);
+}
+
+.subnav__HSK2 {
+    color: rgb(10, 187, 113);
+}
+
+.subnav__HSK3 {
+    color: orange;
+}
+
+.subnav__HSK4 {
+    color: rgb(255, 8, 0);
+}
+
+.subnav__HSK5 {
+    color: rgb(12, 16, 201);
+}
+
+.subnav__HSK6 {
+    color: rgb(134, 2, 146);
+}
+
+.subnav__MT {
+    color: rgb(245, 14, 110);
+}
+
+/* Subnav - TESTS */
+
+.subnav-Tests {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    letter-spacing: 0.8;
+    transition: right linear 0.1s;
+    /* padding-left: 20px; */
+}
+
+.subnav-References {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    letter-spacing: 0.8;
+    transition: right linear 0.1s;
+}
+
+.subnav-References li a {
+    color: #000;
+}
+
+.nav li:hover .subnav-Tests {
+    display: block;
+}
+
+.nav li:hover .subnav-References {
+    display: block;
+}
+
+/*  */
+.sub-test-icon,
+.sub-lis-icon {
+    padding-right: 12px;
+    font-size: 22px;
+}
+
+/* Why use this web */
+.table-useweb {
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+
+}
+
+
+/* CONTACT WITH US */
+
+
+.form-container {
+    max-width: 500px;
+    padding: 32px 32px 80px 32px;
+    margin: 36px auto 0 auto;
+    background-color: rgb(180, 228, 170);
+    border-radius: 6px;
+}
+
+
+.form__row {
+    padding: 8px 0;
+    display: flex;
+}
+
+.form__input {
+    height: 33px;
+    flex: 2;
+    font-size: 16px;
+}
+
+.form-btn-sub {
+    min-width: 436px;
+    background-color: #047c40;
+    height: 33px;
+    color: #fff;
+    border: 1px solid #047c40;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#contact-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tittle-heading {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 42px;
+    color: #464343;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.line-center {
+    border-bottom: 3px solid #d332c5;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container {
+    margin-top: 60px;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* .row{
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+} */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+
+
+}
+
+.form-font {
+    font-size: 18px;
+}
+
+/* .contact-infor{
+    font-size: 18px;
+    line-height: 1.4px;
+    width: 36.7%;
+    margin-right: 55px;
+    height: 248px;
+    background-color: aqua;
+} */
+
+.contact-infor-container {
+    position: relative;
+    width: 400px;
+    height: 230px;
+    background-color: rgb(252, 191, 101);
+    padding: 22px;
+    font-family: serif;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-container {
+    position: relative;
+    width: 500px;
+    height: 260px;
+    background-color: rgb(252, 191, 101);
+    padding: 22px;
+    font-family: serif;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-infor-tittle {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-form-tittle {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-infor-fonts {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.form-submit-btn {
+    background-color: rgb(0, 150, 7);
+    color: #fff;
+    border: 1px solid rgb(0, 150, 7);
+    padding: 10px 16px;
+    margin-top: 8px;
+    float: right;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 130px;
+}
+
+.mt-8 {
+    margin-top: 4px;
+}
+
+/* END CONTACT WITH US */
+
+/* ABOUT US */
+
+.about-intro {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px 20px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.about-container {
+    margin-bottom: 30px;
+}
+
+.about-mission {
+    margin-left: 50px;
+}
+
+.about-vision,
+.about-mission {
+    border: 1px solid #d3cdcd;
+    width: 550px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-mission-icon,
+.about-vision-icon {
+    font-size: 50px;
+    color: rgb(243, 199, 5);
+}
+
+/* END ABOUT US */
+
+.slicer {
+    margin-top: 64px;
+    background: url('https://chineserd.vn/wp-content/uploads/2021/09/HSK1-1089x800.jpg') top center / cover no-repeat;
+    position: relative;
+    padding-top: 50%;
+    max-width: 1024px;
+    max-height: 350px;
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(238, 243, 243);
+    padding-bottom: 30px;
+}
+
+.footer-infor-list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.footer-infor-list li {
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-infor-list li a {
+    text-decoration: none;
+}
+
+.social-list a:hover,
+.footer-infor-list li:hover a {
+    color: rgb(37, 33, 33);
+}
+
+.copyright,
+.social-list {
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-list a {
+    margin-left: 14px;
+}
+
+.line-between,
+.footer-infor-list li a,
+.social-list a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
